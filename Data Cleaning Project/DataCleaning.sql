@@ -1,6 +1,6 @@
 ---- Clean Data in SQL Queries ----
 SELECT 
-	SaleDateConverted, CONVERT(Date, SaleDate)
+	*
 FROM
 	NashvilleHousing
 
@@ -9,6 +9,11 @@ ADD SaleDateConverted Date;
 
 UPDATE NashvilleHousing
 SET SaleDateConverted = CONVERT(Date, SaleDate)
+
+SELECT 
+	SaleDateConverted, CONVERT(Date, SaleDate)
+FROM
+	NashvilleHousing
 
 ---- Populate Property Address data
 
