@@ -1,7 +1,7 @@
 # This is a repository created to display four projects using four different tools for analysis: SQL Queries, Tableau, Data Cleaning, Python Analysis
 
 <b>COVID SQL Project:</b> <br>
-Data was gathered from https://ourworldindata.org/covid-deaths and contains COVID data including location, date, new/total cases, new/total deaths, and more. SQL queries were performed to gather specific data such as the Total Cases vs Total Deaths, Total Cases vs Population (percent of the population infected), and more. Queries performed display a proficiency in aggregate functions, joins, CTEs, temp tables, views, and more. 
+Data was gathered from https://ourworldindata.org/covid-deaths and contains COVID data including location, date, new/total cases, new/total deaths, and more. SQL queries were performed to gather specific data such as the Total Cases vs Total Deaths, Total Cases vs Population (percent of the population infected), and more. Queries performed display a proficiency in aggregate functions, joins, CTEs, temp tables, views, and more.  
 
 <b>COVID Tableau Project</b>: <a href="https://public.tableau.com/app/profile/johnsethchong/viz/CovidAnalysisDashboard_16711601417130/COVIDDashboard">Tableau Visualization Link</a> <br>
 Using the same data set, I performed four different queries in SQL to create spreadsheets to be used for Tableau Visualizations. All visualizations were then displayed on a dashboard for easy viewing. Visualizations include: 
