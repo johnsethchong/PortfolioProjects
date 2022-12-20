@@ -1,3 +1,5 @@
+-- COVID 19 Data Exploration
+
 SELECT 
 	location, date, total_cases, new_cases, total_deaths, population
 FROM
@@ -6,6 +8,7 @@ ORDER BY
 	1,2
 
 -- Total Cases vs Total Deaths 
+-- Shows likelihood of dying if you contract COVID in your country
 SELECT 
 	location, date, total_cases, total_deaths, (total_deaths/total_cases)*100 as DeathPercentage
 FROM
@@ -17,6 +20,7 @@ ORDER BY
 
 
 -- Total Cases vs Population
+-- Shows what percentage of population infected with COVID
 SELECT 
 	location, date, population, total_cases, (total_cases/population)*100 as PercentPopulationInfected
 FROM
@@ -86,6 +90,7 @@ ORDER BY
 
 
 -- Looking at Total Population vs Vaccinations
+-- Shows Percentage of Population that has recieved at least one Covid Vaccine
 
 SELECT 
 	dea.continent, 
@@ -103,7 +108,7 @@ ORDER BY
 	2,3
 
 
--- USE CTE
+-- Use CTE to perform Calculation on Partition By in previous query
 
 WITH PopvsVac (continent, location, date, population, new_vaccinations, RollingPeopleVaccinated)
 as
@@ -129,7 +134,7 @@ PopvsVac
 
 
 
--- Temp Table
+-- Temp Table to perform Calculation on Partition By in previous query
 DROP TABLE if exists #PercentPopulationVaccinated
 CREATE TABLE #PercentPopulationVaccinated
 (
